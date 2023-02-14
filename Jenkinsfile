@@ -29,5 +29,11 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        sh './mvnw verify'
+      }
+    }
+
   }
 }
